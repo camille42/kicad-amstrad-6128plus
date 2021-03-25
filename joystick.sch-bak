@@ -626,7 +626,7 @@ U 1 1 606473BF
 P 3000 1600
 F 0 "L101" V 2819 1600 50  0000 C CNN
 F 1 "ESD-R-12C" V 2910 1600 50  0000 C CNN
-F 2 "" H 3000 1600 50  0001 C CNN
+F 2 "cpc6128+:L_Toroid_Vertical_L17_P17" H 3000 1600 50  0001 C CNN
 F 3 "~" H 3000 1600 50  0001 C CNN
 	1    3000 1600
 	0    1    1    0   
@@ -651,21 +651,6 @@ Wire Wire Line
 	2650 1600 2850 1600
 Wire Wire Line
 	3300 1600 3150 1600
-$Comp
-L Connector:Barrel_Jack J104
-U 1 1 6066EC5B
-P 1050 1700
-F 0 "J104" H 1107 2025 50  0000 C CNN
-F 1 "Jack Power" H 1107 1934 50  0000 C CNN
-F 2 "Connector_BarrelJack:BarrelJack_CUI_PJ-102AH_Horizontal" H 1100 1660 50  0001 C CNN
-F 3 "~" H 1100 1660 50  0001 C CNN
-	1    1050 1700
-	1    0    0    1   
-$EndComp
-Wire Wire Line
-	2450 1800 1350 1800
-Wire Wire Line
-	1350 1600 2650 1600
 Connection ~ 2650 1600
 Connection ~ 2450 1800
 Wire Wire Line
@@ -709,7 +694,7 @@ U 1 1 606C87A8
 P 4450 1950
 F 0 "SW1" V 4404 2080 50  0000 L CNN
 F 1 "SW_DIP_x01" V 4495 2080 50  0000 L CNN
-F 2 "Connector_PinSocket_1.00mm:PinSocket_1x02_P1.00mm_Vertical" H 4450 1950 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4450 1950 50  0001 C CNN
 F 3 "~" H 4450 1950 50  0001 C CNN
 	1    4450 1950
 	0    1    1    0   
@@ -753,7 +738,7 @@ U 1 1 607343A8
 P 2850 850
 F 0 "L104" V 2669 850 50  0000 C CNN
 F 1 "SN8D-500" V 2760 850 50  0000 C CNN
-F 2 "Inductor_THT:L_Toroid_Horizontal_D7.8mm_P13.00mm_Diameter9-5mm_Amidon-T30" H 2850 850 50  0001 C CNN
+F 2 "cpc6128+:L_Toroid_Vertical_L13_P13" H 2850 850 50  0001 C CNN
 F 3 "~" H 2850 850 50  0001 C CNN
 	1    2850 850 
 	0    1    1    0   
@@ -807,7 +792,7 @@ AR Path="/60517D0A/60B2E467" Ref="C?"  Part="1"
 AR Path="/631EEA59/60B2E467" Ref="C139"  Part="1" 
 F 0 "C139" V 3352 1150 50  0000 C CNN
 F 1 "100pF 10V" V 3261 1150 50  0000 C CNN
-F 2 "Capacitor_THT:CP_Radial_D8.0mm_P2.50mm" H 3100 1150 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D8.0mm_P5.00mm" H 3100 1150 50  0001 C CNN
 F 3 "~" H 3100 1150 50  0001 C CNN
 	1    3100 1150
 	1    0    0    -1  
@@ -822,7 +807,7 @@ AR Path="/60517D0A/60C3927D" Ref="C?"  Part="1"
 AR Path="/631EEA59/60C3927D" Ref="C136"  Part="1" 
 F 0 "C136" H 4065 2746 50  0000 L CNN
 F 1 "100uF 10V" H 4065 2655 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 3950 2700 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D8.0mm_P5.00mm" H 3950 2700 50  0001 C CNN
 F 3 "~" H 3950 2700 50  0001 C CNN
 	1    3950 2700
 	1    0    0    -1  
@@ -898,8 +883,6 @@ Wire Wire Line
 Connection ~ 5600 1250
 Wire Wire Line
 	5600 1250 5800 1250
-Wire Bus Line
-	5050 3550 5050 4600
 $Comp
 L Connector:Conn_01x04_Male CD103
 U 1 1 606A23DE
@@ -911,4 +894,46 @@ F 3 "~" H 1050 1100 50  0001 C CNN
 	1    1050 1100
 	1    0    0    -1  
 $EndComp
+$Comp
+L 6128:POWER_JACK_6128 J104
+U 1 1 60765A13
+P 1050 1450
+F 0 "J104" H 1133 1501 39  0000 C CNN
+F 1 "POWER_JACK_6128" H 1133 1426 39  0000 C CNN
+F 2 "cpc6128+:power_jack_6128" H 1100 1450 39  0001 C CNN
+F 3 "" H 1100 1450 39  0001 C CNN
+	1    1050 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 1800 2450 1800
+Wire Wire Line
+	1250 1700 1800 1700
+Wire Wire Line
+	1800 1700 1800 1600
+Wire Wire Line
+	1800 1600 2200 1600
+Wire Wire Line
+	1250 1600 1350 1600
+Wire Wire Line
+	1350 1600 1350 1800
+Wire Wire Line
+	1250 1800 1350 1800
+Connection ~ 1350 1800
+Wire Bus Line
+	5050 3550 5050 4600
+$Comp
+L power:+5V #PWR0175
+U 1 1 607B20E7
+P 2200 1600
+F 0 "#PWR0175" H 2200 1450 50  0001 C CNN
+F 1 "+5V" H 2215 1773 50  0000 C CNN
+F 2 "" H 2200 1600 50  0001 C CNN
+F 3 "" H 2200 1600 50  0001 C CNN
+	1    2200 1600
+	1    0    0    -1  
+$EndComp
+Connection ~ 2200 1600
+Wire Wire Line
+	2200 1600 2650 1600
 $EndSCHEMATC

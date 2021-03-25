@@ -4,8 +4,7 @@ My first big project with Kicad.
 
 As i'm not an expert, don't expect everything to be perfect in the first release.
 
-For the first release, i focussed on
-
+For the first release, i focussed on :
     ** Memory
     ** RGB signal
 

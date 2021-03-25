@@ -383,8 +383,6 @@ Wire Wire Line
 Connection ~ 6950 5550
 Wire Wire Line
 	6950 5550 6850 5550
-Wire Wire Line
-	7250 5400 7250 6500
 $Comp
 L power:+5V #PWR0113
 U 1 1 60FD5A9C
@@ -996,8 +994,6 @@ Wire Wire Line
 	2850 3400 2850 4050
 Connection ~ 2850 4050
 Wire Wire Line
-	2850 4050 2500 4050
-Wire Wire Line
 	3200 3200 3200 3100
 Wire Wire Line
 	3200 3100 2850 3100
@@ -1062,8 +1058,6 @@ Wire Wire Line
 Connection ~ 2050 3950
 Wire Wire Line
 	2050 3950 2050 4050
-Wire Wire Line
-	2350 4050 2050 4050
 Connection ~ 2050 4050
 Wire Wire Line
 	2050 4050 2050 4200
@@ -1278,17 +1272,6 @@ F 3 "" H 6450 7450 50  0001 C CNN
 	1    6450 7450
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:C_Small C128
-U 1 1 6120AEE9
-P 6450 7050
-F 0 "C128" H 6542 7096 50  0000 L CNN
-F 1 "39P" H 6542 7005 50  0000 L CNN
-F 2 "" H 6450 7050 50  0001 C CNN
-F 3 "~" H 6450 7050 50  0001 C CNN
-	1    6450 7050
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5100 7400 5150 7400
 Wire Wire Line
@@ -1337,23 +1320,21 @@ Wire Wire Line
 Connection ~ 4550 7400
 Wire Wire Line
 	4550 7400 4600 7400
-Wire Wire Line
-	6450 7150 6450 7250
 $Comp
 L power:GND #PWR0106
 U 1 1 61400741
-P 6800 7350
-F 0 "#PWR0106" H 6800 7100 50  0001 C CNN
-F 1 "GND" H 6805 7177 50  0000 C CNN
-F 2 "" H 6800 7350 50  0001 C CNN
-F 3 "" H 6800 7350 50  0001 C CNN
-	1    6800 7350
+P 6850 6600
+F 0 "#PWR0106" H 6850 6350 50  0001 C CNN
+F 1 "GND" H 6855 6427 50  0000 C CNN
+F 2 "" H 6850 6600 50  0001 C CNN
+F 3 "" H 6850 6600 50  0001 C CNN
+	1    6850 6600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	6350 5400 6350 6800
 Wire Wire Line
-	7150 5400 7150 6350
+	7150 5400 7150 6300
 Wire Wire Line
 	6050 6950 6050 6800
 Wire Wire Line
@@ -1388,17 +1369,6 @@ Wire Wire Line
 	4550 6300 4550 6950
 Wire Wire Line
 	4550 6300 5850 6300
-$Comp
-L Device:C_Small C129
-U 1 1 61627E90
-P 7150 7050
-F 0 "C129" H 7242 7096 50  0000 L CNN
-F 1 "47P" H 7242 7005 50  0000 L CNN
-F 2 "" H 7150 7050 50  0001 C CNN
-F 3 "~" H 7150 7050 50  0001 C CNN
-	1    7150 7050
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6550 5400 6550 6200
 Wire Wire Line
@@ -1420,11 +1390,7 @@ Wire Wire Line
 Wire Wire Line
 	1400 5150 5150 5150
 Wire Wire Line
-	6650 6000 6850 6000
-Wire Wire Line
-	6850 6000 6850 5900
-Wire Wire Line
-	6650 5550 6650 6000
+	6850 6000 6850 5950
 $Comp
 L 6128:LA6393D IC109
 U 1 1 61754918
@@ -1804,91 +1770,8 @@ Wire Wire Line
 	10200 4450 10200 6600
 Wire Wire Line
 	10300 4150 10300 6600
-$Comp
-L Device:Crystal Y?
-U 1 1 6056C8D5
-P 6800 6850
-AR Path="/6056C8D5" Ref="Y?"  Part="1" 
-AR Path="/604FCFA4/6056C8D5" Ref="X181"  Part="1" 
-F 0 "X181" H 6800 7118 50  0000 C CNN
-F 1 "40MhZ" H 6800 7027 50  0000 C CNN
-F 2 "Oscillator:Oscillator_DIP-8" H 6800 6850 50  0001 C CNN
-F 3 "~" H 6800 6850 50  0001 C CNN
-	1    6800 6850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:L L102
-U 1 1 605A0F1D
-P 7450 7050
-F 0 "L102" H 7503 7096 50  0000 L CNN
-F 1 "L" H 7503 7005 50  0000 L CNN
-F 2 "" H 7450 7050 50  0001 C CNN
-F 3 "~" H 7450 7050 50  0001 C CNN
-	1    7450 7050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small_US R145
-U 1 1 605A2790
-P 6800 6500
-F 0 "R145" V 7005 6500 50  0000 C CNN
-F 1 "4,7M" V 6914 6500 50  0000 C CNN
-F 2 "" H 6800 6500 50  0001 C CNN
-F 3 "~" H 6800 6500 50  0001 C CNN
-	1    6800 6500
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	7150 6350 6450 6350
-Wire Wire Line
-	6450 6350 6450 6850
-Wire Wire Line
-	6450 6850 6550 6850
-Connection ~ 6450 6850
-Wire Wire Line
-	6450 6850 6450 6950
-Wire Wire Line
-	6950 6850 7050 6850
-Wire Wire Line
-	6550 6850 6550 6500
-Wire Wire Line
-	6550 6500 6700 6500
-Connection ~ 6550 6850
-Wire Wire Line
-	6550 6850 6650 6850
-Wire Wire Line
-	6900 6500 7050 6500
-Wire Wire Line
-	7050 6500 7050 6850
-Connection ~ 7050 6850
-Wire Wire Line
-	7050 6850 7150 6850
-Wire Wire Line
-	7150 6850 7150 6950
-Wire Wire Line
-	7150 7150 7150 7250
-Wire Wire Line
-	7150 7250 6800 7250
-Wire Wire Line
-	6800 7250 6450 7250
-Connection ~ 6800 7250
-Wire Wire Line
-	6800 7250 6800 7350
-Wire Wire Line
-	7150 6850 7450 6850
-Wire Wire Line
-	7450 6850 7450 6900
-Connection ~ 7150 6850
-Wire Wire Line
-	7150 7250 7450 7250
 Wire Wire Line
 	7450 7250 7450 7200
-Connection ~ 7150 7250
-Wire Wire Line
-	7150 6850 7150 6500
-Wire Wire Line
-	7150 6500 7250 6500
 $Comp
 L Device:C_Small C101
 U 1 1 60AD3E03
@@ -1974,8 +1857,6 @@ Wire Wire Line
 	2100 1700 1550 1700
 Text Notes 2000 1250 0    39   ~ 0
 CAPS DISTRIBUTED\nEVENLY AROUND IC101
-Text Notes 6700 6200 0    39   ~ 0
-40MhZ\nOSC
 $Comp
 L Device:CP1 C126
 U 1 1 605D4E8F
@@ -2103,6 +1984,28 @@ F 3 "" H 8100 4600 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9850 2650 10100 2650
+$Comp
+L Oscillator:ACO-xxxMHz X181
+U 1 1 6062CA28
+P 6850 6300
+F 0 "X181" H 6507 6346 50  0000 R CNN
+F 1 "40 MHz" H 6507 6255 50  0000 R CNN
+F 2 "Oscillator:Oscillator_DIP-14" H 6507 6209 50  0001 R CNN
+F 3 "http://www.conwin.com/datasheets/cx/cx030.pdf" H 6750 6300 50  0001 C CNN
+	1    6850 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 5550 6650 5950
+Wire Wire Line
+	6850 5950 6650 5950
+Connection ~ 6850 5950
+Wire Wire Line
+	6850 5950 6850 5900
+Wire Wire Line
+	2500 4050 2850 4050
+Wire Wire Line
+	2050 4050 2350 4050
 Wire Bus Line
 	9900 6700 10350 6700
 Wire Bus Line
