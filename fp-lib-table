@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name cpc6128+)(type KiCad)(uri C:/Users/ncrochu/Documents/retro/cpc/kicad/cpc6128+.pretty)(options "")(descr ""))
+  (lib (name other)(type KiCad)(uri C:/Users/ncrochu/Documents/retro/SparkFun-Kicad-Libraries-master/SparkFun-Connectors.pretty)(options "")(descr ""))
+  (lib (name digikey-footprints)(type KiCad)(uri C:/Users/ncrochu/Documents/retro/digikey-kicad-library-master/digikey-kicad-library-master/digikey-footprints.pretty)(options "")(descr ""))
+)
