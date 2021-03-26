@@ -191,26 +191,6 @@ Entry Wire Line
 	10350 4450 10450 4550
 Entry Wire Line
 	10350 4350 10450 4450
-Text Label 10050 3550 0    39   ~ 0
-Y1
-Text Label 10050 3650 0    39   ~ 0
-Y2
-Text Label 10050 3750 0    39   ~ 0
-Y3
-Text Label 10050 3850 0    39   ~ 0
-Y4
-Text Label 10050 3950 0    39   ~ 0
-Y5
-Text Label 10050 4050 0    39   ~ 0
-Y6
-Text Label 10050 4150 0    39   ~ 0
-Y7
-Text Label 10050 4250 0    39   ~ 0
-Y8
-Text Label 10050 4350 0    39   ~ 0
-Y9
-Text Label 10050 4450 0    39   ~ 0
-Y10
 Text Label 10050 4550 0    39   ~ 0
 PA0
 Text Label 10050 4650 0    39   ~ 0
@@ -608,8 +588,6 @@ Wire Wire Line
 	9850 4050 10350 4050
 Wire Wire Line
 	9850 3950 10350 3950
-Wire Wire Line
-	9850 3850 10350 3850
 Wire Wire Line
 	9850 3750 10350 3750
 Wire Wire Line
@@ -2006,6 +1984,28 @@ Wire Wire Line
 	2500 4050 2850 4050
 Wire Wire Line
 	2050 4050 2350 4050
+Wire Wire Line
+	9850 3850 10350 3850
+Text Label 10050 3550 0    39   ~ 0
+Y1
+Text Label 10050 3650 0    39   ~ 0
+Y2
+Text Label 10050 3750 0    39   ~ 0
+Y3
+Text Label 10050 3850 0    39   ~ 0
+Y4
+Text Label 10050 3950 0    39   ~ 0
+Y5
+Text Label 10050 4050 0    39   ~ 0
+Y6
+Text Label 10050 4150 0    39   ~ 0
+Y7
+Text Label 10050 4250 0    39   ~ 0
+Y8
+Text Label 10050 4350 0    39   ~ 0
+Y9
+Text Label 10050 4450 0    39   ~ 0
+Y10
 Wire Bus Line
 	9900 6700 10350 6700
 Wire Bus Line

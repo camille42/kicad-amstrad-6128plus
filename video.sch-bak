@@ -567,7 +567,7 @@ F 3 "" H 9000 2550 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9000 2200 9000 1650
-Text Notes 9650 1350 2    39   ~ 0
+Text Notes 9700 1300 2    39   ~ 0
 KEYBOARD Y\nCP104\nHBLB105-5J
 Wire Wire Line
 	8500 1650 9000 1650
@@ -631,10 +631,6 @@ Text Label 10000 1450 2    39   ~ 0
 Y9
 Text Label 10000 1550 2    39   ~ 0
 Y10
-Wire Bus Line
-	9100 1750 9750 1750
-Text Label 9450 1750 2    39   ~ 0
-Y[1..10]
 Wire Wire Line
 	3950 1900 9800 1900
 Wire Wire Line
@@ -649,8 +645,8 @@ L Connector:Conn_01x10_Female CP104
 U 1 1 6073DBFC
 P 10350 1050
 F 0 "CP104" H 10378 1026 50  0000 L CNN
-F 1 "Conn 10" H 10378 935 50  0000 L CNN
-F 2 "Connector_PinSocket_1.27mm:PinSocket_1x10_P1.27mm_Vertical" H 10350 1050 50  0001 C CNN
+F 1 "clavier" H 10378 935 50  0000 L CNN
+F 2 "cpc6128+:CP_103_104" H 10350 1050 50  0001 C CNN
 F 3 "~" H 10350 1050 50  0001 C CNN
 	1    10350 1050
 	1    0    0    -1  
@@ -1060,7 +1056,7 @@ U 1 1 60569F7B
 P 6350 6550
 F 0 "CP103" H 6378 6526 50  0000 L CNN
 F 1 "clavier" H 6378 6435 50  0000 L CNN
-F 2 "Connector_PinSocket_1.27mm:PinSocket_1x10_P1.27mm_Vertical" H 6350 6550 50  0001 C CNN
+F 2 "cpc6128+:CP_103_104" H 6350 6550 50  0001 C CNN
 F 3 "~" H 6350 6550 50  0001 C CNN
 	1    6350 6550
 	1    0    0    -1  
@@ -1100,8 +1096,6 @@ Wire Wire Line
 	2950 6950 3250 6950
 Wire Bus Line
 	2850 6150 2500 6150
-Text Label 2500 6150 0    50   ~ 0
-PA[0..7]
 Text Label 3000 6250 0    50   ~ 0
 PA0
 Text Label 3000 6350 0    50   ~ 0
@@ -1249,8 +1243,6 @@ Entry Wire Line
 	1850 7350 1950 7450
 Entry Wire Line
 	1950 7350 2050 7450
-Text Label 950  7450 0    50   ~ 0
-X[1..8]
 $Comp
 L power:+5V #PWR0133
 U 1 1 60B5CD3A
@@ -1788,10 +1780,18 @@ Wire Wire Line
 Connection ~ 5250 2550
 Wire Wire Line
 	5250 2550 5650 2550
+Text GLabel 9550 1750 0    39   Input ~ 0
+Y[1..10]
+Wire Bus Line
+	9550 1750 9750 1750
+Text GLabel 950  7450 0    39   Input ~ 0
+X[1..8]
 Wire Bus Line
 	2850 6150 2850 6850
 Wire Bus Line
 	9750 750  9750 1750
 Wire Bus Line
 	950  7450 5500 7450
+Text GLabel 2500 6150 0    39   Input ~ 0
+PA[0..7]
 $EndSCHEMATC
