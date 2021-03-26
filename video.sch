@@ -1786,12 +1786,28 @@ Wire Bus Line
 	9550 1750 9750 1750
 Text GLabel 950  7450 0    39   Input ~ 0
 X[1..8]
+Text GLabel 2500 6150 0    39   Input ~ 0
+PA[0..7]
+Text Label 1950 7250 1    39   ~ 0
+X1
+Text Label 1850 7250 1    39   ~ 0
+X2
+Text Label 1750 7250 1    39   ~ 0
+X3
+Text Label 1650 7250 1    39   ~ 0
+X4
+Text Label 1550 7250 1    39   ~ 0
+X5
+Text Label 1450 7250 1    39   ~ 0
+X6
+Text Label 1350 7250 1    39   ~ 0
+X7
+Text Label 1250 7250 1    39   ~ 0
+X8
 Wire Bus Line
 	2850 6150 2850 6850
 Wire Bus Line
 	9750 750  9750 1750
 Wire Bus Line
 	950  7450 5500 7450
-Text GLabel 2500 6150 0    39   Input ~ 0
-PA[0..7]
 $EndSCHEMATC
