@@ -122,12 +122,6 @@ Text GLabel 2750 5200 3    39   Input ~ 0
 A[0..15]
 Text GLabel 1700 5200 3    39   Input ~ 0
 WCLK
-Text GLabel 1800 5200 3    39   Input ~ 0
-NIOR
-Text GLabel 1900 5200 3    39   Input ~ 0
-NIOW
-Text GLabel 2000 5200 3    39   Input ~ 0
-NFDC
 Text GLabel 2100 5200 3    39   Input ~ 0
 RESET
 Text GLabel 2950 5200 3    39   Input ~ 0
@@ -1071,6 +1065,12 @@ Connection ~ 9650 4300
 Wire Wire Line
 	9650 4300 9650 5200
 Connection ~ 7550 5250
+Text HLabel 1800 5200 3    39   Input ~ 0
+~IOR
+Text HLabel 1900 5200 3    39   Input ~ 0
+~IOW
+Text HLabel 2000 5200 3    39   Input ~ 0
+~FDC
 Wire Bus Line
 	2200 3400 2200 4950
 $EndSCHEMATC

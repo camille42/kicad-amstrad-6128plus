@@ -556,12 +556,6 @@ Text GLabel 10350 2650 2    39   Input ~ 0
 CLK16
 Text GLabel 9850 2750 2    39   Input ~ 0
 WCLK
-Text GLabel 9850 2850 2    39   Input ~ 0
-~IOR
-Text GLabel 9850 2950 2    39   Input ~ 0
-~IOW
-Text GLabel 9850 3050 2    39   Input ~ 0
-~FDC
 Text GLabel 10950 3150 2    39   Input ~ 0
 CLK1
 Wire Wire Line
@@ -2006,6 +2000,72 @@ Text Label 10050 4350 0    39   ~ 0
 Y9
 Text Label 10050 4450 0    39   ~ 0
 Y10
+Text Label 7350 1100 1    39   ~ 0
+D0
+Text Label 7250 1100 1    39   ~ 0
+D1
+Text Label 7150 1100 1    39   ~ 0
+D2
+Text Label 7050 1100 1    39   ~ 0
+D3
+Text Label 6950 1100 1    39   ~ 0
+D4
+Text Label 6850 1100 1    39   ~ 0
+D5
+Text Label 6750 1100 1    39   ~ 0
+D6
+Text Label 6650 1100 1    39   ~ 0
+D7
+Text Label 9450 1100 1    39   ~ 0
+A0
+Text Label 9350 1100 1    39   ~ 0
+A1
+Text Label 9250 1100 1    39   ~ 0
+A2
+Text Label 9150 1100 1    39   ~ 0
+A3
+Text Label 9050 1100 1    39   ~ 0
+A4
+Text Label 8950 1100 1    39   ~ 0
+A5
+Text Label 8850 1100 1    39   ~ 0
+A6
+Text Label 8750 1100 1    39   ~ 0
+A7
+Text Label 8650 1100 1    39   ~ 0
+A8
+Text Label 8550 1100 1    39   ~ 0
+A9
+Text Label 8450 1100 1    39   ~ 0
+A10
+Text Label 8350 1100 1    39   ~ 0
+A11
+Text Label 8250 1100 1    39   ~ 0
+A12
+Text Label 8150 1100 1    39   ~ 0
+A13
+Text Label 8050 1100 1    39   ~ 0
+A14
+Text Label 7950 1100 1    39   ~ 0
+A15
+Text Label 10050 650  1    39   ~ 0
+CA1
+Text Label 7850 1150 1    39   ~ 0
+CA14
+Text Label 7750 1150 1    39   ~ 0
+CA15
+Text Label 7650 1150 1    39   ~ 0
+CA16
+Text Label 7550 1150 1    39   ~ 0
+CA17
+Text Label 7450 1150 1    39   ~ 0
+CA18
+Text HLabel 9850 2850 2    39   Input ~ 0
+~IOR
+Text HLabel 9850 2950 2    39   Input ~ 0
+~IOW
+Text HLabel 9850 3050 2    39   Input ~ 0
+~FDC
 Wire Bus Line
 	9900 6700 10350 6700
 Wire Bus Line

@@ -1788,22 +1788,30 @@ Text GLabel 950  7450 0    39   Input ~ 0
 X[1..8]
 Text GLabel 2500 6150 0    39   Input ~ 0
 PA[0..7]
-Text Label 1250 7250 1    39   ~ 0
-X1
-Text Label 1350 7250 1    39   ~ 0
-X2
-Text Label 1450 7250 1    39   ~ 0
-X3
-Text Label 1550 7250 1    39   ~ 0
-X4
-Text Label 1650 7250 1    39   ~ 0
-X5
-Text Label 1750 7250 1    39   ~ 0
-X6
-Text Label 1850 7250 1    39   ~ 0
-X7
 Text Label 1950 7250 1    39   ~ 0
+X1
+Text Label 1850 7250 1    39   ~ 0
+X2
+Text Label 1750 7250 1    39   ~ 0
+X3
+Text Label 1650 7250 1    39   ~ 0
+X4
+Text Label 1550 7250 1    39   ~ 0
+X5
+Text Label 1450 7250 1    39   ~ 0
+X6
+Text Label 1350 7250 1    39   ~ 0
+X7
+Text Label 1250 7250 1    39   ~ 0
 X8
+Text GLabel 2750 5550 0    39   Input ~ 0
+PC6
+Text GLabel 2750 5750 0    39   Input ~ 0
+PC7
+Text GLabel 2750 5850 0    39   Input ~ 0
+~RESET
+Text GLabel 2750 5950 0    39   Input ~ 0
+CLK1
 Wire Bus Line
 	2850 6150 2850 6850
 Wire Bus Line

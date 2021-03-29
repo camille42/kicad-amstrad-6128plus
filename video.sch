@@ -1804,6 +1804,14 @@ Text Label 1350 7250 1    39   ~ 0
 X7
 Text Label 1250 7250 1    39   ~ 0
 X8
+Text GLabel 2750 5550 0    39   Input ~ 0
+PC6
+Text GLabel 2750 5750 0    39   Input ~ 0
+PC7
+Text GLabel 2750 5850 0    39   Input ~ 0
+~RESET
+Text GLabel 2750 5950 0    39   Input ~ 0
+CLK1
 Wire Bus Line
 	2850 6150 2850 6850
 Wire Bus Line

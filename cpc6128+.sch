@@ -18,15 +18,18 @@ S 1200 1750 1250 450
 U 604FCFA4
 F0 "gateArray" 50
 F1 "gateArray.sch" 50
+F2 "~IOR" I R 2450 1850 39 
+F3 "~IOW" I R 2450 1950 39 
+F4 "~FDC" I R 2450 2050 39 
 $EndSheet
 $Sheet
-S 1300 4150 750  300 
+S 1200 3200 750  300 
 U 60517D0A
 F0 "video" 50
 F1 "video.sch" 50
 $EndSheet
 $Sheet
-S 1300 4850 700  350 
+S 1200 3700 700  350 
 U 607E3316
 F0 "CPU" 39
 F1 "CPU.sch" 39
@@ -38,13 +41,16 @@ F0 "memoire" 39
 F1 "memoire.sch" 39
 $EndSheet
 $Sheet
-S 1250 3250 1250 450 
+S 2650 1750 1250 450 
 U 6259ACB2
 F0 "FloppyDisk" 39
 F1 "Floppy.sch" 39
+F2 "~IOR" I L 2650 1850 39 
+F3 "~IOW" I L 2650 1950 39 
+F4 "~FDC" I L 2650 2050 39 
 $EndSheet
 $Sheet
-S 1300 5450 1000 350 
+S 1200 4250 1000 350 
 U 631EEA59
 F0 "joystick" 39
 F1 "joystick.sch" 39
@@ -39710,4 +39716,10 @@ EndData
 $EndBitmap
 Text Notes 950  1300 0    394  ~ 0
 6128plus\n
+Wire Wire Line
+	2450 1850 2650 1850
+Wire Wire Line
+	2450 1950 2650 1950
+Wire Wire Line
+	2450 2050 2650 2050
 $EndSCHEMATC
