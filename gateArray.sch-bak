@@ -1962,7 +1962,7 @@ U 1 1 6062CA28
 P 6850 6300
 F 0 "X181" H 6507 6346 50  0000 R CNN
 F 1 "40 MHz" H 6507 6255 50  0000 R CNN
-F 2 "Oscillator:Oscillator_DIP-14" H 6507 6209 50  0001 R CNN
+F 2 "cpc6128+:Oscillator_X181_DIP-14" H 6507 6209 50  0001 R CNN
 F 3 "http://www.conwin.com/datasheets/cx/cx030.pdf" H 6750 6300 50  0001 C CNN
 	1    6850 6300
 	1    0    0    -1  

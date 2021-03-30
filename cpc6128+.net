@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source C:\Users\ncrochu\Documents\retro\cpc\kicad-amstrad-6128plus\cpc6128+.sch)
-    (date "29/03/2021 16:50:54")
+    (date "30/03/2021 11:21:24")
     (tool "Eeschema (5.1.5)-3")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -436,7 +436,7 @@
       (tstamp 6050253A))
     (comp (ref X181)
       (value "40 MHz")
-      (footprint Oscillator:Oscillator_DIP-14)
+      (footprint cpc6128+:Oscillator_X181_DIP-14)
       (datasheet http://www.conwin.com/datasheets/cx/cx030.pdf)
       (libsource (lib Oscillator) (part ACO-xxxMHz) (description "HCMOS Crystal Clock Oscillator, DIP14-style metal package"))
       (sheetpath (names /gateArray/) (tstamps /604FCFA4/))
