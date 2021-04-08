@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source C:\Users\ncrochu\Documents\retro\cpc\kicad-amstrad-6128plus\cpc6128+.sch)
-    (date "30/03/2021 11:21:24")
+    (date "03/04/2021 15:44:06")
     (tool "Eeschema (5.1.5)-3")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -1820,7 +1820,8 @@
         (pin (num 11) (name MIM) (type passive))
         (pin (num 12) (name GND) (type passive))
         (pin (num 13) (name GND2) (type passive))
-        (pin (num 14) (name OFFS) (type passive))
+        (pin (num 14) (name CTRL) (type passive))
+        (pin (num 15) (name OFFS) (type passive))
         (pin (num 16) (name LPF1) (type passive))
         (pin (num 17) (name LPF2) (type passive))
         (pin (num 18) (name TEST1) (type passive))
@@ -3478,7 +3479,7 @@
       (node (ref R108) (pin 1)))
     (net (code 230) (name "Net-(C121-Pad1)")
       (node (ref C121) (pin 1))
-      (node (ref IC103) (pin 14)))
+      (node (ref IC103) (pin 15)))
     (net (code 231) (name WINDOW)
       (node (ref IC104) (pin 22))
       (node (ref IC103) (pin 8)))
