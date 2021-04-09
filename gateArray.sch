@@ -608,7 +608,7 @@ CONTROL
 Text GLabel 4100 850  1    39   Input ~ 0
 NEXP
 Text GLabel 4650 2050 0    39   Input ~ 0
-NROMEN
+~ROMEN
 Wire Wire Line
 	5150 2650 5000 2650
 Wire Wire Line
@@ -928,13 +928,11 @@ Text Label 1500 3550 0    39   ~ 0
 Text Label 1450 3650 0    39   ~ 0
 +5V
 Wire Wire Line
-	5150 3650 2500 3650
+	5150 3650 2550 3650
 Wire Wire Line
-	5150 3750 2500 3750
+	5150 3750 2550 3750
 Wire Wire Line
-	5150 3850 2500 3850
-Wire Wire Line
-	5150 3950 2500 3950
+	5150 3850 2550 3850
 Wire Wire Line
 	5150 4050 2850 4050
 Text Label 1500 4150 0    39   ~ 0
@@ -1975,8 +1973,6 @@ Connection ~ 6850 5950
 Wire Wire Line
 	6850 5950 6850 5900
 Wire Wire Line
-	2500 4050 2850 4050
-Wire Wire Line
 	2050 4050 2350 4050
 Wire Wire Line
 	9850 3850 10350 3850
@@ -2066,6 +2062,75 @@ Text HLabel 9850 2950 2    39   Input ~ 0
 ~IOW
 Text HLabel 9850 3050 2    39   Input ~ 0
 ~FDC
+Text GLabel 4500 1550 0    39   Input ~ 0
+~M1
+Text GLabel 4500 1750 0    39   Input ~ 0
+~RD
+Text GLabel 4500 1850 0    39   Input ~ 0
+~WR
+Text GLabel 4500 1950 0    39   Input ~ 0
+~INT
+Text GLabel 4500 1450 0    39   Input ~ 0
+~MREQ
+$Comp
+L Device:Jumper_NO_Small LK105
+U 1 1 60769E4F
+P 2450 4050
+F 0 "LK105" H 2450 4143 50  0001 C CNN
+F 1 "Jumper_NO_Small" H 2450 4144 50  0001 C CNN
+F 2 "" H 2450 4050 50  0001 C CNN
+F 3 "~" H 2450 4050 50  0001 C CNN
+	1    2450 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 4050 2850 4050
+$Comp
+L Device:Jumper_NO_Small LK104
+U 1 1 607CB8B3
+P 2450 3950
+F 0 "LK104" H 2450 4135 50  0001 C CNN
+F 1 "Jumper_NO_Small" H 2450 4044 50  0001 C CNN
+F 2 "" H 2450 3950 50  0001 C CNN
+F 3 "~" H 2450 3950 50  0001 C CNN
+	1    2450 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 3950 2550 3950
+$Comp
+L Device:Jumper_NO_Small LK103
+U 1 1 607FC508
+P 2450 3850
+F 0 "LK103" H 2450 3943 50  0001 C CNN
+F 1 "Jumper_NO_Small" H 2450 3944 50  0001 C CNN
+F 2 "" H 2450 3850 50  0001 C CNN
+F 3 "~" H 2450 3850 50  0001 C CNN
+	1    2450 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NO_Small LK102
+U 1 1 607FD1A8
+P 2450 3750
+F 0 "LK102" H 2450 3935 50  0001 C CNN
+F 1 "Jumper_NO_Small" H 2450 3843 50  0001 C CNN
+F 2 "" H 2450 3750 50  0001 C CNN
+F 3 "~" H 2450 3750 50  0001 C CNN
+	1    2450 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NO_Small LK101
+U 1 1 6085EDA7
+P 2450 3650
+F 0 "LK101" H 2450 3835 50  0001 C CNN
+F 1 "Jumper_NO_Small" H 2450 3744 50  0001 C CNN
+F 2 "" H 2450 3650 50  0001 C CNN
+F 3 "~" H 2450 3650 50  0001 C CNN
+	1    2450 3650
+	1    0    0    -1  
+$EndComp
 Wire Bus Line
 	9900 6700 10350 6700
 Wire Bus Line

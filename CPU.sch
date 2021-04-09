@@ -465,12 +465,6 @@ F 3 "~" H 1800 2250 50  0001 C CNN
 	1    1800 2250
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	2200 1500 2200 1650
-Wire Wire Line
-	2200 1650 1700 1650
-Wire Wire Line
-	1700 1650 1700 2800
 Text Label 950  4050 0    39   ~ 0
 ~IORQ
 Wire Wire Line
@@ -660,7 +654,7 @@ Wire Wire Line
 Text Label 950  4150 0    39   ~ 0
 ~RD
 Text Label 950  4250 0    39   ~ 0
-~RW
+~WR
 Connection ~ 2600 2650
 Wire Wire Line
 	2900 3250 3300 3250
@@ -868,16 +862,6 @@ Wire Wire Line
 Connection ~ 3750 5050
 Text Label 950  5950 0    39   ~ 0
 CLK4
-Text Notes 2200 1450 0    39   ~ 0
-LK106
-Wire Notes Line
-	2150 1450 2400 1450
-Wire Notes Line
-	2400 1450 2400 1550
-Wire Notes Line
-	2400 1550 2150 1550
-Wire Notes Line
-	2150 1550 2150 1450
 Text GLabel 1700 3400 3    39   Input ~ 0
 ~IORQ
 $Comp
@@ -1732,6 +1716,43 @@ Text GLabel 11050 2100 1    39   Input ~ 0
 SYNC
 Text Notes 6300 3450 0    39   ~ 0
 not used\n
+Text GLabel 3600 1850 1    39   Input ~ 0
+~MREQ
+Text GLabel 3400 2250 1    39   Input ~ 0
+~RD
+Text GLabel 3700 2350 1    39   Input ~ 0
+~WR
+Text GLabel 3350 1600 1    39   Input ~ 0
+~M1
+Text GLabel 3000 3250 1    39   Input ~ 0
+~INT
+Text GLabel 3400 2550 1    39   Input ~ 0
+~RFSH
+Text GLabel 3650 2750 1    39   Input ~ 0
+~HALT
+Text GLabel 3800 2000 1    39   Input ~ 0
+~IORQ
+Text GLabel 4000 4650 2    39   Input ~ 0
+~BUSACK
+Text GLabel 4050 3800 1    39   Input ~ 0
+~BUSRQ
+Text GLabel 4400 3550 3    39   Input ~ 0
+~RESET
+Text GLabel 4400 3350 3    39   Input ~ 0
+~NMI
+$Comp
+L Device:Jumper_NO_Small LK106
+U 1 1 6089111E
+P 2250 1500
+F 0 "LK106" H 2250 1593 50  0001 C CNN
+F 1 "Jumper_NO_Small" H 2250 1594 50  0001 C CNN
+F 2 "" H 2250 1500 50  0001 C CNN
+F 3 "~" H 2250 1500 50  0001 C CNN
+	1    2250 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 1650 2150 1650
 Wire Bus Line
 	1550 4500 6250 4500
 Wire Bus Line
@@ -1752,4 +1773,10 @@ Wire Bus Line
 	1550 1350 1550 4500
 Wire Bus Line
 	6250 1700 6250 4500
+Wire Wire Line
+	1700 1650 1700 2800
+Wire Wire Line
+	2150 1500 2150 1650
+Text Notes 2150 1450 0    39   ~ 0
+LK106
 $EndSCHEMATC
