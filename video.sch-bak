@@ -1812,10 +1812,20 @@ Text GLabel 2750 5850 0    39   Input ~ 0
 ~RESET
 Text GLabel 2750 5950 0    39   Input ~ 0
 CLK1
+Text GLabel 3650 7050 3    39   Input ~ 0
+TST1
+Text GLabel 4350 5550 1    39   Input ~ 0
+A
+Text GLabel 4450 5650 1    39   Input ~ 0
+B
+Text GLabel 4550 5750 1    39   Input ~ 0
+C
 Wire Bus Line
 	2850 6150 2850 6850
 Wire Bus Line
 	9750 750  9750 1750
 Wire Bus Line
 	950  7450 5500 7450
+Text GLabel 3100 5350 1    39   Input ~ 0
+A8
 $EndSCHEMATC
