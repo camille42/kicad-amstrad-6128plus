@@ -1753,6 +1753,12 @@ F 3 "~" H 2250 1500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1700 1650 2150 1650
+Wire Wire Line
+	1700 1650 1700 2800
+Wire Wire Line
+	2150 1500 2150 1650
+Text Notes 2150 1450 0    39   ~ 0
+LK106
 Wire Bus Line
 	1550 4500 6250 4500
 Wire Bus Line
@@ -1773,10 +1779,4 @@ Wire Bus Line
 	1550 1350 1550 4500
 Wire Bus Line
 	6250 1700 6250 4500
-Wire Wire Line
-	1700 1650 1700 2800
-Wire Wire Line
-	2150 1500 2150 1650
-Text Notes 2150 1450 0    39   ~ 0
-LK106
 $EndSCHEMATC

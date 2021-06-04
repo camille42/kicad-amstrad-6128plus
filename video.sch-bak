@@ -694,17 +694,6 @@ $EndComp
 Wire Wire Line
 	10150 4350 10150 4550
 $Comp
-L Device:Q_NPN_BCE Q107
-U 1 1 6080BE90
-P 9500 4700
-F 0 "Q107" H 9690 4738 50  0000 L CNN
-F 1 "KTC1815Y" H 9690 4655 39  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 9700 4800 50  0001 C CNN
-F 3 "~" H 9500 4700 50  0001 C CNN
-	1    9500 4700
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R_Small_US R198
 U 1 1 608116AE
 P 9600 5100
@@ -1499,7 +1488,7 @@ F 1 "1uF 50V" V 7611 4700 50  0000 C CNN
 F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 7450 4700 50  0001 C CNN
 F 3 "~" H 7450 4700 50  0001 C CNN
 	1    7450 4700
-	0    -1   -1   0   
+	0    1    -1   0   
 $EndComp
 Wire Wire Line
 	7600 4700 7700 4700
@@ -1606,7 +1595,7 @@ F 3 "~" H 8200 5100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Q_NPN_BCE Q106
+L Device:Q_NPN_ECB Q106
 U 1 1 609A4624
 P 8100 4700
 F 0 "Q106" H 8290 4738 50  0000 L CNN
@@ -1632,7 +1621,7 @@ F 1 "1uF 50V" V 9011 4700 50  0000 C CNN
 F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 8850 4700 50  0001 C CNN
 F 3 "~" H 8850 4700 50  0001 C CNN
 	1    8850 4700
-	0    -1   -1   0   
+	0    1    -1   0   
 $EndComp
 Wire Wire Line
 	8600 4150 10550 4150
@@ -1820,12 +1809,29 @@ Text GLabel 4450 5650 1    39   Input ~ 0
 B
 Text GLabel 4550 5750 1    39   Input ~ 0
 C
+Text GLabel 3100 5350 1    39   Input ~ 0
+A8
+Text Label 4450 5550 0    39   ~ 0
+A
+Text Label 4500 5650 0    39   ~ 0
+B
+Text Label 4600 5750 0    39   ~ 0
+C
 Wire Bus Line
 	2850 6150 2850 6850
 Wire Bus Line
 	9750 750  9750 1750
 Wire Bus Line
 	950  7450 5500 7450
-Text GLabel 3100 5350 1    39   Input ~ 0
-A8
+$Comp
+L Device:Q_NPN_ECB Q107
+U 1 1 6080BE90
+P 9500 4700
+F 0 "Q107" H 9690 4738 50  0000 L CNN
+F 1 "KTC1815Y" H 9690 4655 39  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 9700 4800 50  0001 C CNN
+F 3 "~" H 9500 4700 50  0001 C CNN
+	1    9500 4700
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
